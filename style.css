@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+}
+
+.Home {
+    padding-top: 6%;
+    padding-left: 25%;
+    display: flex;
+}
+
+.Home .__title_desc__ {
+    width: 60%;
+}
+
+.Home .__title_desc__ h1 {
+    padding-top: 5%;
+    font-size: 64px;
+}
+
+.Home .__title_desc__ h1 p {
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+.Home .__title_img__ img {
+    width: 40%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+/* Navbar */
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar .__navbarImg__ {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.navbar .__navbarImg__ img {
+    width: 40px;
+}
+
+.navbar .__navbarTitle__ {
+    padding-right: 10px;
+    margin-right: 50px;
+}
+
+.navbar .__navbarTitle__ p {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar li a:hover {
+    color: gray;
+    transition: color 0.5s;
+}
