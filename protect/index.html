@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HATZ Screen Protect</title>
+    <style>
+body {
+    font-family: "Source Code Pro", monospace;
+    background-color: #fff;
+    color: #000;
+    cursor: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    margin-bottom: 50px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.home .home-content {
+    display: flex;
+    align-items: center;
+}
+
+.home .home-content .home-text {
+    margin-right: 20px;
+}
+
+.home .home-content .home-text h1 {
+    font-size: 48px;
+    font-weight: bold;;
+}
+
+.home .home-content .home-text p {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.home img {
+    max-width: 300px;
+    height: auto;
+}
+
+    </style>
+</head>
+<body id="background">
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>HATZ Research</h1>
+                <p>Screen Protection</p>
+            </div>
+            <img src="../images/hatz.png" alt="HATZ Logo">
+        </div>
+    </section>
+    <script>
+var onProtecting = false;
+addEventListener("click", function() {
+    var el = document.documentElement,
+      rfs = el.requestFullscreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+        || el.msRequestFullscreen 
+    ;
+
+    rfs.call(el);
+});
+    </script>
+</body>
+</html>
