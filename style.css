@@ -1,81 +1,179 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: "Source Code Pro", monospace;
+    background-color: #fff;
+    color: #000;
 }
-
-.Home {
-    padding-top: 6%;
-    padding-left: 25%;
-    display: flex;
-}
-
-.Home .__title_desc__ {
-    width: 60%;
-}
-
-.Home .__title_desc__ h1 {
-    padding-top: 5%;
-    font-size: 64px;
-}
-
-.Home .__title_desc__ h1 p {
-    font-size: 20px;
-    text-align: left;
-    font-weight: normal;
-    line-height: 1.6;
-}
-
-.Home .__title_img__ img {
-    width: 40%;
-    height: 100%;
-    margin-left: 10%;
-}
-
-/* Navbar */
 
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
     background-color: black;
+    color: white;
 }
 
-.navbar li {
-    float: left;
+.navbar .iconFrame {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
 }
 
-.navbar .__navbarImg__ {
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
-.navbar .__navbarImg__ img {
+.navbar .iconFrame img {
     width: 40px;
+    padding: 0;
+    margin-right: 10px;
 }
 
-.navbar .__navbarTitle__ {
-    padding-right: 10px;
-    margin-right: 50px;
-}
-
-.navbar .__navbarTitle__ p {
+.navbar a {
     color: white;
-    font-weight: bold;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    margin-left: 15px;
     transition: color 0.5s;
+    padding: 15px 0px;
 }
 
-.navbar li a:hover {
+.navbar a:hover {
     color: gray;
     transition: color 0.5s;
 }
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.home .home-content {
+    display: flex;
+    align-items: center;
+}
+
+.home .home-content .home-text {
+    margin-right: 20px;
+}
+
+.home .home-content .home-text h1 {
+    font-size: 48px;
+    font-weight: bold;;
+}
+
+.home .home-content .home-text p {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.home img {
+    max-width: 300px;
+    height: auto;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: black;
+}
+
+.about-section img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+}
+
+.about-section .about-text {
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.about-section .about-text h2 {
+    font-size: 28px;
+    font-weight: unset;
+    margin-bottom: 50px;
+}
+
+
+.contact-section {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 80px;
+    font-size: 2em;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .name-group {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form .name-group div {
+    flex: 1;
+}
+
+.contact-form .name-group input {
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding: 12px 6px;
+    background-color: black;
+    color: white;
+    transition: color 0.5s;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: gray;
+    transition: color 0.5s;
+}
+

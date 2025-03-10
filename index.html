@@ -10,42 +10,122 @@
         <meta name="google-site-verification" content="mzaGU6SgNxZXLt5NuDwUGJAm8ZODG2IsdWGFaIf-uEo"/>
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
 
         <!-- Font - Source Code Pro -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+        <!-- Prism -->
+        <link rel="stylesheet" href="/prism/prism.css" data-noprefix />
+        <script src="/prism/prism.js"></script>
     </head>
     <body>
-        <ul class="navbar">
-            <li class="__navbarImg__">
-                <img src="favicon.png">
-            </li>
-            <li class="__navbarTitle__"><p>HATZ-Research</p></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
+        <nav class="navbar">
+            <div class="iconFrame">
+                <img src="./images/favicon.png" class="__icon__">
+                <p>HATZ-Research</p>
+            </div>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
 
         <!-- Home Page -->
-        <div class="Home" id="home">
-            <div class="__title_desc__">
-                <h1 class="__title_text__">
-                    HATZ Research
-                    <br>
+        <section id="home" class="home">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>HATZ Research</h1>
                     <p>We are cybersecurity researchers.</p>
-                </h1>
+                    <a class="button" href="#about">Learn More</a>
+                    <a class="button" href="#contact">Get Started</a>
+                </div>
+                <img src="./images/hatz.png" alt="HATZ Logo">
             </div>
-            <div class="__title_img__">
-                <img src="hatz.png">
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                </p>
+                <p>
+                    <h3>Open Source Intelligence Service</h3>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit.
+                        Parturient et viverra mauris ex ad mi purus rutrum.
+                        Blandit posuere eleifend vehicula convallis quam accumsan sit gravida pulvinar?
+                        Quisque neque quam eget etiam dictum orci lorem.
+                        Phasellus curabitur nullam imperdiet himenaeos ante elit parturient rutrum.
+                        Velit conubia himenaeos odio primis commodo vel aenean cubilia.
+                        Pulvinar ornare suscipit per, conubia quisque commodo eget accumsan.
+                        Eu molestie sem dictum praesent primis.
+                        Sed convallis morbi nascetur lobortis vivamus condimentum ipsum.
+                        Velit condimentum eros, integer platea amet iaculis venenatis risus?
+                    </p><br>
+
+                    <h3>Malware Analysis & Development (PoC)</h3>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit.
+                        Parturient et viverra mauris ex ad mi purus rutrum.
+                        Blandit posuere eleifend vehicula convallis quam accumsan sit gravida pulvinar?
+                        Quisque neque quam eget etiam dictum orci lorem.
+                        Phasellus curabitur nullam imperdiet himenaeos ante elit parturient rutrum.
+                        Velit conubia himenaeos odio primis commodo vel aenean cubilia.
+                        Pulvinar ornare suscipit per, conubia quisque commodo eget accumsan.
+                        Eu molestie sem dictum praesent primis.
+                        Sed convallis morbi nascetur lobortis vivamus condimentum ipsum.
+                        Velit condimentum eros, integer platea amet iaculis venenatis risus?
+                    </p><br>
+
+                    <h3>Cybersecurity Courses & Guides</h3>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit.
+                        Parturient et viverra mauris ex ad mi purus rutrum.
+                        Blandit posuere eleifend vehicula convallis quam accumsan sit gravida pulvinar?
+                        Quisque neque quam eget etiam dictum orci lorem.
+                        Phasellus curabitur nullam imperdiet himenaeos ante elit parturient rutrum.
+                        Velit conubia himenaeos odio primis commodo vel aenean cubilia.
+                        Pulvinar ornare suscipit per, conubia quisque commodo eget accumsan.
+                        Eu molestie sem dictum praesent primis.
+                        Sed convallis morbi nascetur lobortis vivamus condimentum ipsum.
+                        Velit condimentum eros, integer platea amet iaculis venenatis risus?
+                    </p>
+                </p>
             </div>
-        </div>
+            <img src="./images/hatz.png" alt="About Us Image">
+        </section>
 
-        <div class="About" id="about">
-
-        </div>
+        <section class="contact-section" id="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="name-group">
+                    <div>
+                        <span>Name</span>
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                    </div>
+                    <div>
+                        <span>Last Name</span>
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div>
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <span>Your Message</span>
+                    <textarea name="message" rows="15" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Contact Us</button>
+            </form>            
+        </section>
     </body>
 </html>

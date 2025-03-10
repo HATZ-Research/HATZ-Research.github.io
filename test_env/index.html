@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HATZ Research</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: black;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            padding: 20px;
+        }
+        .home-content {
+            display: flex;
+            align-items: center;
+        }
+        .home-text {
+            font-size: 2em;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .home img {
+            max-width: 200px;
+            height: auto;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            background-color: #2e2e2e;
+            color: white;
+        }
+        .about-section img {
+            width: 50%;
+            max-width: 500px;
+            height: auto;
+        }
+        .about-text {
+            width: 50%;
+            max-width: 500px;
+            padding: 20px;
+        }
+        .about-text h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .contact-section {
+            background-color: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: black;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div>HATZ-Research</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <section id="home" class="home">
+        <div class="home-content">
+            <div class="home-text">
+                HATZ <br> Research
+                <p style="font-size: 0.6em; font-weight: normal;">We are cybersecurity researchers.</p>
+            </div>
+            <img src="image.png" alt="HATZ Logo">
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <img src="image.png" alt="About Us Image">
+        <div class="about-text">
+            <h2>Built for the Thinkers</h2>
+            <p>
+                At HATZ Research, we believe that cybersecurity is not just about defense—it’s about thinking ahead, anticipating threats, and staying one step ahead of attackers. 
+                Since our inception, we have been dedicated to providing cutting-edge malware research, OSINT analysis, and red teaming services.
+            </p>
+            <p>
+                Our journey started with a passion for uncovering vulnerabilities and strengthening security systems. Today, we continue to push the boundaries of cybersecurity research, helping organizations 
+                understand and counter sophisticated cyber threats.
+            </p>
+        </div>
+    </section>
+    
+    <section id="expertise" class="section">Expertise Section - Placeholder</section>
+    
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
